@@ -17,6 +17,7 @@ A lightweight and responsive Pastebin-like web application built using **ReactJS
 
 ## 📁 Folder Structure
 
+```
 paste-app/
 ├── node_modules/
 ├── public/
@@ -43,3 +44,5 @@ paste-app/
 ├── README.md
 ├── tailwind.config.js
 ├── vite.config.js
+
+```
