@@ -25,7 +25,7 @@ const Paste = () => {
   return (
     <div className="p-4">
       <input
-        className="p-2 rounded-2xl min-w-[600px] mt-5"
+        className="p-2 rounded-2xl min-w-[600px] mt-5 border border-black"
         type="search"
         placeholder="search here"
         value={searchTerm}
@@ -35,32 +35,32 @@ const Paste = () => {
         {filteredData.length > 0 &&
           filteredData.map((paste) => {
             return (
-            <div className="border px-4 py-2 mb-3 rounded flex flex-col gap-1" key={paste?._id}>
+            <div className="border px-4 py-2 mb-3 rounded flex flex-col gap-1 border-black" key={paste?._id}>
             {/* Row: Title (left) and Actions (right) */}
             <div className="flex justify-between items-center">
             {/* Paste Title */}
-            <div className="text-xl font-semibold text-white">{paste.title}</div>
+            <div className="text-xl font-semibold text-black">{paste.title}</div>
 
             {/* Action Buttons */}
             <div className="flex gap-2">
             <a
               href={`/?pasteId=${paste?._id}`}
               title="Edit"
-              className="p-2 rounded bg-gray-800 hover:text-blue-400"
+              className="p-2 rounded bg-white hover:text-blue-400"
             >
               <FaEdit />
             </a>
             <a
               href={`/pastes/${paste?._id}`}
               title="View"
-              className="p-2 rounded bg-gray-800 hover:text-yellow-400"
+              className="p-2 rounded bg-white hover:text-yellow-400"
             >
               <AiOutlineEye />
             </a>
             <button
               onClick={() => handleDelete(paste?._id)}
               title="Delete"
-              className="p-2 rounded bg-gray-800 hover:text-red-400"
+              className="p-2 rounded bg-white hover:text-red-400"
             >
               <FaTrash />
             </button>
@@ -70,14 +70,14 @@ const Paste = () => {
                 toast.success("Copied to clipboard");
               }}
               title="Copy"
-              className="p-2 rounded bg-gray-800 hover:text-purple-400"
+              className="p-2 rounded bg-white hover:text-purple-400"
             >
               <FaCopy />
             </button>
             <button
               onClick={() => handleCopy(paste?._id)}
               title="Share"
-              className="p-2 rounded bg-gray-800 hover:text-green-400"
+              className="p-2 rounded bg-white hover:text-green-400"
             >
               <FiShare2 />
             </button>
@@ -85,7 +85,7 @@ const Paste = () => {
             </div>
 
             {/* Created At */}
-            <div className="text-sm text-gray-400 ml-1">
+            <div className="text-sm text-black ml-1">
             {new Date(paste.createdAt).toLocaleString()}
             </div>
             </div>
