@@ -2,6 +2,11 @@
 
 A lightweight and responsive Pastebin-like web application built using **ReactJS**, **HTML**, and **Tailwind CSS**. This app allows users to quickly paste, save, and share code snippets or plain text online.
 
+## 🔗 Live Demo
+
+👉 [Click here to use the app](https://paste-app01.vercel.app)
+
+
 ## 🚀 Features
 
 - 🔖 Create and view pastes in a clean UI
